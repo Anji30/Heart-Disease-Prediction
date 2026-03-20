@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Patient Report</h1>
+
+    <h2>Name: {{ name }}</h2>
+
+    <hr>
+
+    <h2 style="color: {{ color }};">
+        {{ result }}
+    </h2>
+
+    <p><b>Risk Percentage:</b> {{ probability }}%</p>
+    <p><b>Model Accuracy:</b> {{ accuracy }}%</p>
+
+    <br>
+
+    <button onclick="window.print()">🖨️ Print Report</button>
+
+</div>
+
+</body>
+</html>
